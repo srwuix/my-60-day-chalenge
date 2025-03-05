@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  transition: 0.2s linear;
+  color: var(--color-text);
+}
+/* root setting */
+:root {
+  --bg-color: #2a092e;
+  --card-color: rgb(254, 254, 254, 0.2);
+  --color-text: #fafafa;
+  --text-shadow: rgba(254, 254, 254, 0.6);
+  --border-radius: 20px;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  /* background: url("./../img/Waiting\ for\ someone\ ❤️.jfif") no-repeat;
+  background-size: cover;
+  background-position: center; */
+  background-color: var(--bg-color);
+}
+.container {
+  height: 700px;
+  border-radius: 1rem;
+  width: 1700px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.top-text {
+  margin: 2rem 0 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+.top-text h1,
+.top-text p,
+.top-text a {
+  text-align: center;
+}
+.top-text p {
+  font-size: 1rem;
+}
+.top-text a {
+  font-size: 1rem;
+  color: aqua;
+}
+.big-title-top {
+  text-align: center;
+}
+
+.row .row-1 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+  justify-content: center;
+  width: 100%;
+}
+.col-box {
+  border: 1px solid var(--text-shadow);
+  background-color: var(--card-color);
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+.col-box h2 {
+  font-size: 1.2rem;
+}
+.row-1 .col-box .img-card {
+  width: 250px;
+  height: 150px;
+  border-radius: 1rem;
+}
+.link-card {
+  padding: 0.5rem 1rem;
+  background-color: var(--color-text);
+  color: var(--bg-color);
+  border-radius: 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.link-card:hover {
+  background-color: var(--bg-color);
+  color: var(--color-text);
+}
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+    padding: 1rem;
+  }
+  .row-1 {
+    flex-direction: column;
+  }
+}
