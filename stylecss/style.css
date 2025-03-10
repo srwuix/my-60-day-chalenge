@@ -91,7 +91,7 @@ body {
   background-color: var(--color-text);
   color: var(--bg-color);
   border-radius: 1rem;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: bold;
 }
 .link-card:hover {
