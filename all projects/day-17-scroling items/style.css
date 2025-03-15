@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: rgb(14, 5, 56);
+  padding: 0 10px;
+}
+.wrapper {
+  background-color: #fff;
+  max-width: 1000px;
+  border-radius: 1rem;
+  overflow-x: hidden;
+  padding: 35px;
+  position: relative;
+}
+.wrapper .icon {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 120px;
+  display: flex;
+  align-items: center;
+}
+.icon:first-child {
+  left: 0;
+  display: none;
+  background: linear-gradient(90deg, #ffffff 70%, transparent);
+}
+.icon:last-child {
+  right: 0;
+  justify-content: flex-end;
+  background: linear-gradient(-90deg, #ffffff 70%, transparent);
+}
+.icon .bx {
+  font-size: 1.5rem;
+  width: 55px;
+  height: 55px;
+  background-color: #dfdfdf;
+  text-align: center;
+  line-height: 55px;
+  border-radius: 50%;
+}
+.icon .bx:hover {
+  background-color: #cacaca;
+}
+.icon:first-child .bx {
+  margin-left: 15px;
+}
+.icon:last-child .bx {
+  margin-right: 15px;
+}
+.wrapper .tab-box {
+  display: flex;
+  list-style: none;
+  gap: 12px;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+.tab-box.dragging {
+  scroll-behavior: auto;
+  cursor: grab;
+}
+.tab-box .tab {
+  white-space: nowrap;
+  font-size: 1.18rem;
+  background-color: #f5f4fb;
+  border: 1px solid #d6d6d6;
+  padding: 13px 20px;
+  border-radius: 5rem;
+  cursor: pointer;
+}
+.tab-box.dragging .tab {
+  user-select: none;
+  pointer-events: none;
+}
+.tab-box .tab.active {
+  color: #fff;
+  background: #488fe0;
+  border-color: transparent;
+}
