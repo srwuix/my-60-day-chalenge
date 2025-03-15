@@ -82,8 +82,31 @@ body {
   user-select: none;
   pointer-events: none;
 }
-.tab-box .tab.active {
+.tab-box .tab:hover {
   color: #fff;
   background: #488fe0;
   border-color: transparent;
+}
+@media (max-width: 480px) {
+  .container {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  .wrapper {
+    padding: 20px;
+  }
+  .tab-box .tab {
+    white-space: nowrap;
+    font-size: 1rem;
+    background-color: #f5f4fb;
+    border: 1px solid #d6d6d6;
+    padding: 5px 10px;
+    border-radius: 5rem;
+    cursor: pointer;
+  }
+  .tab-box .tab:hover {
+    color: #fff;
+    background: #488fe0;
+    border-color: transparent;
+  }
 }
